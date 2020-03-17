@@ -23,11 +23,11 @@ class PostsList extends React.Component {
     render() {
         return (
             <div>
-                <h1>Total Posts - {this.state.posts.length}</h1>
+                <h1 className = "text-monospace font-italic text-light bg-dark">Total Posts - {this.state.posts.length}</h1>
                 <ul>
                     {
                         this.state.posts.map(post => {
-                            return <li key={post._id}> <Link to = {`/posts/${post.id}`}>{post.title}</Link></li>
+                            return <li key={post._id} className = "font-italic"> <Link to = {`/posts/${post.id}`}>{post.title}</Link></li>
                         })
                     }
                 </ul>

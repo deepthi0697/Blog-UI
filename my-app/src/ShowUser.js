@@ -36,12 +36,12 @@ class ShowUser extends React.Component {
     render(){
         return (
             <div>
-                <h1>Username: {this.state.user.name}</h1>
-                <h1>Posts written by the user</h1>
+                <h1 className="text-light bg-dark">Username: {this.state.user.name}</h1>
+                <h1 clasName="text-monospace">Posts written by the user</h1>
                 <ul>
                 {
                     this.state.posts.map(post => {
-                        return <li key={post._id}><Link to = {`/posts/${post.id}`}>{post.title}</Link></li>
+                        return <li key={post._id}  className = "font-italic text-info"><Link to = {`/posts/${post.id}`}>{post.title}</Link></li>
                     })
                 }
                 </ul>

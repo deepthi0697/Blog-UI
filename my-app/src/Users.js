@@ -22,11 +22,11 @@ class UsersList extends React.Component {
     render(){
         return (
             <div>
-                <h1>Users List = {this.state.users.length}</h1>
+                <h1 className = "text-monospace font-italic text-light bg-dark">Users List = {this.state.users.length}</h1>
                 <ul>
                     {
                         this.state.users.map(function(user) {
-                            return <li key={user.id}><Link to={`/users/${user.id}`}>{user.name}</Link></li>
+                            return <li key={user.id} className = "shadow p-3 mb-5 bg-white rounded font-weight-lighter "><Link to={`/users/${user.id}`}>{user.name}</Link></li>
                         })
                     }
                 </ul>

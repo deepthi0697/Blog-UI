@@ -41,18 +41,18 @@ class ShowPost extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h1>Username: {this.state.username}</h1>
-                <h1>TITLE: {this.state.post.title}</h1>
+            <div className = "p-3 mb-2 bg-transparent text-dark">
+                <h1 className="text-light bg-dark">Username: {this.state.username}</h1>
+                <h1 className = "text-primary">TITLE: {this.state.post.title}</h1>
 
-                <h3>BODY: {this.state.post.body}</h3> 
+                <h3 className = "font-italic">BODY: {this.state.post.body}</h3> 
                  <hr></hr>
 
-                 <h1>Comments</h1>
+                 <h1 className="font-weight-normal">Comments</h1>
                  <ul>
                      {
                          this.state.comments.map(comment => {
-                             return <li key={comment._id}>{comment.body}</li>
+                             return <li key={comment._id} className = "font-italic text-info">{comment.body}</li>
                          })
                      }
                  </ul>
