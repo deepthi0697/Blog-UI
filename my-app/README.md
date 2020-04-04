@@ -25,7 +25,7 @@ npm run test
 
 ## Author
 
-* Github: [@deepthi0697](https://github.com/deepthi0697)
+* Github: [@deepthi0697](https://github.com/deepthishastry2306)
 * LinkedIn: [@deepthi2306](https://linkedin.com/in/deepthi2306)
 
 ## Show your support
